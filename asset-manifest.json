@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.7147346d.css",
-    "main.js": "/static/js/main.cc002df2.js",
+    "main.js": "/static/js/main.a3132397.js",
     "static/js/787.9ecfc8fd.chunk.js": "/static/js/787.9ecfc8fd.chunk.js",
     "static/media/bg-1.jpg": "/static/media/bg-1.ee4ba4f5c8af075bea39.jpg",
     "static/media/ARIAN NIMANI CV.pdf": "/static/media/ARIAN NIMANI CV.e921d3b654a163a1741b.pdf",
-    "static/media/project-1.jpg": "/static/media/project-1.8fad21ea24f9cedc839f.jpg",
-    "static/media/project-2.jpg": "/static/media/project-2.12f85de672d16de38909.jpg",
+    "static/media/project-1.jpg": "/static/media/project-1.8167239dcc5ac8f96284.jpg",
+    "static/media/project-13.jpg": "/static/media/project-13.8fad21ea24f9cedc839f.jpg",
+    "static/media/project-2.jpg": "/static/media/project-2.abd952b1498ca19ee9f1.jpg",
     "static/media/project-4.jpg": "/static/media/project-4.cdfcab2ee34740fbd981.jpg",
     "static/media/arianImage.jpg": "/static/media/arianImage.e739e58d339bb92bd8ae.jpg",
     "static/media/project-3.jpg": "/static/media/project-3.6a0cdb48c0d69e697f31.jpg",
     "index.html": "/index.html",
     "main.7147346d.css.map": "/static/css/main.7147346d.css.map",
-    "main.cc002df2.js.map": "/static/js/main.cc002df2.js.map",
+    "main.a3132397.js.map": "/static/js/main.a3132397.js.map",
     "787.9ecfc8fd.chunk.js.map": "/static/js/787.9ecfc8fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7147346d.css",
-    "static/js/main.cc002df2.js"
+    "static/js/main.a3132397.js"
   ]
 }
