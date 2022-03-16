@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7147346d.css",
-    "main.js": "/static/js/main.adf46b91.js",
+    "main.js": "/static/js/main.d04efd34.js",
     "static/js/787.9ecfc8fd.chunk.js": "/static/js/787.9ecfc8fd.chunk.js",
     "static/media/ARIAN NIMANI CV.pdf": "/static/media/ARIAN NIMANI CV.e921d3b654a163a1741b.pdf",
     "static/media/cc-bg-1.jpg": "/static/media/cc-bg-1.4915e21d695484744508.jpg",
@@ -12,11 +12,11 @@
     "static/media/project-3.jpg": "/static/media/project-3.6a0cdb48c0d69e697f31.jpg",
     "index.html": "/index.html",
     "main.7147346d.css.map": "/static/css/main.7147346d.css.map",
-    "main.adf46b91.js.map": "/static/js/main.adf46b91.js.map",
+    "main.d04efd34.js.map": "/static/js/main.d04efd34.js.map",
     "787.9ecfc8fd.chunk.js.map": "/static/js/787.9ecfc8fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7147346d.css",
-    "static/js/main.adf46b91.js"
+    "static/js/main.d04efd34.js"
   ]
 }
