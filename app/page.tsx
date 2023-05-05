@@ -10,9 +10,11 @@ export default async function Home() {
   const data = await getDataFromFirebase();
 
   if (!data) return <></>;
+
   store.dispatch(setPortfolioData(data));
-  const { projects, skills }: ProjectSkillsProps =
-    store.getState().data.data[0];
+
+  const { projects, skills }: ProjectSkillsProps = store.getState().data
+    .data[0] ?? { projects: [], skills: [] };
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center gap-8">
