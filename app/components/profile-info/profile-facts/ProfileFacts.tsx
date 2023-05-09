@@ -10,7 +10,7 @@ const ProfileFacts = ({}) => {
   const totalProjects = projects.length;
 
   return (
-    <div className="flex gap-20 text-center text-gray-md dark:text-gray-l mt-4 px-8">
+    <div className="flex md: gap-5 md:gap-20 text-center text-gray-md dark:text-gray-l mt-4 px-8">
       {work.map((job: WorkProps) => (
         <WorkCard key={job.id} job={job} />
       ))}

@@ -19,7 +19,7 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
         height={500}
       />
       <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-75 transition-opacity duration-300 dark:bg-yellow-c bg-yellow-d">
-        <div className="text-gray-d flex flex-col items-center gap-4 text-center	cursor-default">
+        <div className="text-gray-d flex flex-col items-center gap-4 text-center	cursor-default p-8">
           <span className="text-xl font-medium">{name}</span>
           <span className="text-sm">{description}</span>
           <a href={link}>
