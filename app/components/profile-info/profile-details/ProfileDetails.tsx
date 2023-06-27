@@ -1,7 +1,6 @@
 import { SocialCard } from "@/components/cards";
 import { store } from "../../../redux/store";
 import React from "react";
-import { SocialProps } from "@/types/dataTypes";
 
 const ProfileDetails = () => {
   const { name, profession, social } = store.getState().data.data[0];

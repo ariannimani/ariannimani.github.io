@@ -1,4 +1,3 @@
-import { SocialProps } from "@/types/dataTypes";
 import React, { FC } from "react";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { IconType } from "react-icons/lib";

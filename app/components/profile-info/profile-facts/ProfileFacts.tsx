@@ -1,8 +1,6 @@
 import { WorkCard } from "@/components/cards";
 import { store } from "../../../redux/store";
-import { getYears } from "@/utils";
 import React from "react";
-import { WorkProps } from "@/types/dataTypes";
 
 const ProfileFacts = ({}) => {
   const { work, projects } = store.getState().data.data[0];

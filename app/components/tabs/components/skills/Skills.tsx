@@ -1,5 +1,4 @@
 import { SkillsCard } from "@/components/cards";
-import { SkillProps } from "@/types/dataTypes";
 import React, { FC } from "react";
 
 interface SkillsProps {

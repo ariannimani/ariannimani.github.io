@@ -1,8 +1,7 @@
 "use client";
 import React, { FC, useState } from "react";
 import Button from "../button/Button";
-import { Portfolio, Skills, Experience } from "@/components/tabs/components";
-import { ProjectProps, SkillProps } from "@/types/dataTypes";
+import { Portfolio, Skills } from "@/components/tabs/components";
 import { sortById } from "@/utils";
 
 interface TabsProps {
@@ -13,7 +12,6 @@ const Tabs: FC<TabsProps> = ({ projects, skills }) => {
   const tabs = [
     { value: "portfolio", label: "Portfolio" },
     { value: "skills", label: "Skills" },
-    //{ value: "experience", label: "Experience" },
   ];
   const tabContents = [
     {
@@ -26,11 +24,6 @@ const Tabs: FC<TabsProps> = ({ projects, skills }) => {
       component: Skills,
       data: skills,
     },
-    //{
-    //  tabValue: "experience",
-    //  component: Experience,
-    //  data:experience
-    //},
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0].value);

@@ -1,5 +1,4 @@
 import { PortfolioCard } from "@/components/cards";
-import { ProjectProps } from "@/types/dataTypes";
 import React, { FC } from "react";
 interface PortfolioProps {
   data: ProjectProps[];

@@ -1,14 +1,15 @@
 import Image from "next/image";
 import React, { FC } from "react";
 import { Ellipse } from "./components";
-import { ProjectProps } from "@/types/dataTypes";
+import { BsGithub } from "react-icons/bs";
+import { IoLinkOutline } from "react-icons/io5";
 
 interface PortfolioCardProps {
   project: ProjectProps;
 }
 
 const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
-  const { name, image, description, link } = project;
+  const { name, image, description, link, gitLink } = project;
   return (
     <div className="relative w-80 h-56 object-cover rounded-xl overflow-hidden">
       <Image
@@ -22,10 +23,19 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
         <div className="text-gray-d flex flex-col items-center gap-4 text-center	cursor-default p-8">
           <span className="text-xl font-medium">{name}</span>
           <span className="text-sm">{description}</span>
-          <a href={link}>
-            <Ellipse />
-          </a>
         </div>
+      </div>
+      <div className="absolute bottom-2 left-0 right-0 flex items-center justify-center gap-2">
+        {gitLink && (
+          <a href={gitLink}>
+            <Ellipse icon={<BsGithub />} />
+          </a>
+        )}
+        {link && (
+          <a href={link}>
+            <Ellipse icon={<IoLinkOutline />} />
+          </a>
+        )}
       </div>
     </div>
   );

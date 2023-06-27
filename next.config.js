@@ -5,6 +5,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
+    unoptimized: true,
     domains: ["firebasestorage.googleapis.com"],
   },
 };
