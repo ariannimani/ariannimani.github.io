@@ -11,7 +11,7 @@ interface PortfolioCardProps {
 const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
   const { name, image, description, link, gitLink } = project;
   return (
-    <div className="relative w-80 h-56 object-cover rounded-xl overflow-hidden">
+    <div className="relative w-80 h-56 object-cover rounded-xl overflow-hidden  group">
       <Image
         src={image}
         alt=""
@@ -19,13 +19,13 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
         width={500}
         height={500}
       />
-      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-75 transition-opacity duration-300 dark:bg-yellow-c bg-yellow-d">
-        <div className="text-gray-d flex flex-col items-center gap-4 text-center	cursor-default p-8">
+      <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-75 transition-opacity duration-300 dark:bg-yellow-c bg-yellow-d pb-4">
+        <div className="text-gray-d flex flex-col items-center gap-4 text-center	cursor-default p-8 h-full">
           <span className="text-xl font-medium">{name}</span>
           <span className="text-sm">{description}</span>
         </div>
       </div>
-      <div className="absolute bottom-2 left-0 right-0 flex items-center justify-center gap-2">
+      <div className="absolute bottom-2 left-0 right-0 opacity-0 group-hover:opacity-75">
         {gitLink && (
           <a href={gitLink}>
             <Ellipse icon={<BsGithub />} />
