@@ -3,6 +3,8 @@ import { ProfileButtons, ProfileDetails, ProfileFacts, ProfileImage } from "./";
 import { store } from "@/redux/store";
 
 const ProfileInfo = () => {
+  if (!store.getState().data.data) return <></>;
+
   const { cvLink } = store.getState().data.data[0];
 
   return (
