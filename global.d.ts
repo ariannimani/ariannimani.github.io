@@ -28,6 +28,7 @@ declare global {
     name: string;
     link: string;
     gitLink: string;
+    developed: boolean;
   }
   interface WorkProps {
     description: string;

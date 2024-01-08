@@ -9,7 +9,8 @@ interface PortfolioCardProps {
 }
 
 const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
-  const { name, image, description, link, gitLink } = project;
+  const { name, image, description, link, gitLink, developed } = project;
+
   return (
     <div className="relative w-80 h-56 object-cover rounded-xl overflow-hidden  group">
       <Image
@@ -20,8 +21,13 @@ const PortfolioCard: FC<PortfolioCardProps> = ({ project }) => {
         height={500}
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-75 transition-opacity duration-300 dark:bg-yellow-c bg-yellow-d pb-4">
-        <div className="text-gray-d flex flex-col items-center gap-4 text-center	cursor-default p-8 h-full">
-          <span className="text-xl font-medium">{name}</span>
+        <div className="text-gray-d flex flex-col items-center gap-3 text-center	cursor-default p-8 h-full">
+          <div className="flex flex-col gap-0.5">
+            <span className="text-xl font-medium">{name}</span>
+            <span className="text-xs">
+              {!developed && "(Currently working on this project)"}
+            </span>
+          </div>
           <span className="text-sm">{description}</span>
         </div>
       </div>
