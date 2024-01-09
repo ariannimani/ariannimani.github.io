@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { Ellipse } from "./components";
 import { BsGithub } from "react-icons/bs";
 import { IoLinkOutline } from "react-icons/io5";
+import { ProjectProps } from "@/types/dataTypes";
 
 interface PortfolioCardProps {
   project: ProjectProps;

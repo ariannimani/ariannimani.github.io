@@ -1,3 +1,4 @@
+import { WorkProps } from "@/types/dataTypes";
 import { getYears } from "@/utils";
 import React, { FC } from "react";
 
